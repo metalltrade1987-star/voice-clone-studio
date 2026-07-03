@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Aider
+.aider.chat.history.md
+.aider.input.history
+.aider.tags.cache.v4/
+
+# Outputs & Cache
+outputs/
+xtts_cache/
+
+# Misc
+structure.txt
+*.wav
+*.mp3
+*.m4a
+
+#
+voices/

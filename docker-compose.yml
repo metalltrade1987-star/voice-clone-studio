@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  xtts:
+    image: daswer123/xtts-api-server:latest
+    container_name: xtts
+    ports:
+      - "8020:8020"
+    volumes:
+      # Эталонные голоса (только чтение)
+      - ./voices:/app/example:ro
+      # Кэш моделей (чтобы не качать каждый раз)
+      - ./xtts_cache:/app/xtts_models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    restart: unless-stopped
+    environment:
+      # Дефолтные настройки при старте (опционально)
+      - XTTS_SPEED=0.9
