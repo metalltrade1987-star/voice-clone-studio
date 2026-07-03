@@ -36,7 +36,7 @@
 
 ```bash
 # 1. Клонируйте репозиторий
-git clone https://github.com/YOUR_USERNAME/voice-clone-studio.git
+git clone https://github.com/metalltrade1987-star/voice-clone-studio.git
 cd voice-clone-studio
 
 # 2. Запустите TTS-сервер
