@@ -2,6 +2,7 @@
 
 Локальная система клонирования голоса и синтеза речи (Zero-Shot TTS) на базе XTTS-v2.  
 Работает полностью офлайн на потребительском железе (NVIDIA RTX 3060 12GB + Ollama).
+![Voice Clone Studio](docs/screenshot.jpg)
 
 ## ✨ Особенности
 
